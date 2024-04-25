@@ -1167,6 +1167,11 @@ a[href*="mailto"] {
 .team-minimal figure {
   transition: all 0.3s;
 }
+.team-minimal figure img {
+  width: 370px;
+  height: 370px;
+  object-fit: cover;
+}
 
 .team-minimal .team-minimal-caption {
   padding: 20px 5px;
@@ -8223,6 +8228,9 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-aside .social-block a:hover {
   color: #000;
 }
+.rd-navbar-classic.rd-navbar-static .rd-navbar-aside .social-block ul li a:hover svg path {
+  fill: #000;
+}
 
 .rd-navbar-classic.rd-navbar-static .brand-logo-inverse {
   display: none;
@@ -14376,7 +14384,7 @@ html[class*="ie"] .dtp-hour-hand {
 }
 @media (max-width: 1200px) {
   .main-carausel .owl-prev,
-  .main-carausel.owl-next {
+  .main-carausel .owl-next {
     top: calc(50% - 33px);
   }
 }
