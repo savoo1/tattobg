@@ -11,3 +11,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+$(".scroll").click(function (e) {
+  e.preventDefault();
+  var nameof = "." + $(this).attr("name");
+  $("html, body").animate(
+    {
+      scrollTop: $(nameof).offset().top - 120,
+    },
+    1000
+  );
+});
