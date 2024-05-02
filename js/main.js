@@ -22,3 +22,6 @@ $(".scroll").click(function (e) {
     1000
   );
 });
+$(".stopDefault").click(function (e) {
+  e.preventDefault();
+});

@@ -3864,6 +3864,9 @@ html.tablet .ui-to-top {
   transition: 0.3s;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiper-pagination.swiper-pagination-hidden {
@@ -8203,7 +8206,7 @@ html[class*="ie"] .dtp-hour-hand {
 .cta {
   /* background: #f6f6f6; */
   padding-bottom: 30px;
-  background-image: url("/images/slide-1-1920x879.jpg");
+  background-image: url("/images/slide-1-1920x879.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
