@@ -8300,6 +8300,27 @@ html[class*="ie"] .dtp-hour-hand {
 .social-media a:hover .fa-instagram {
   color: #f14843;
 }
+
+.recap-div{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  display: none;
+}
+.recap-div_active{
+  display: flex;
+}
+.recap-div_active .g-recaptcha{
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(255,0,0,1);
+  -moz-box-shadow: 0px 0px 17px 1px rgba(255,0,0,1);
+  box-shadow: 0px 0px 17px 1px rgba(255,0,0,1);
+  border-radius: 3px;
+}
+.recap-div .g-recaptcha div{
+  width: 302px !important;
+  height: 76px !important;
+}
 @media (max-width: 600px) {
   .social-cta h1 {
     font-size: 17px;

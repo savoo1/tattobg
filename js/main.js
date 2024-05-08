@@ -49,9 +49,10 @@ $(".form-submit").click(function (e) {
           }
         },
       });
-    }
-
     location.reload();
+    }else{
+      $(".recap-div").addClass("recap-div_active")
+    }
   } else {
     $(".quote-form-inputs input").each(function (index) {
       if (!$(this)[0].validity.valid) {
