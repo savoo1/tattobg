@@ -518,20 +518,7 @@
 				if (v.is(":last-child")) o.addClass("form-control-last-child");
 			}
 
-			elements.on('input change propertychange blur', function (e) {
-				var $this = $(this), results;
 
-				if (e.type !== "blur") if (!$this.parent().hasClass("has-error")) return;
-				if ($this.parents('.rd-mailform').hasClass('success')) return;
-
-				if (( results = $this.regula('validate') ).length) {
-					for (i = 0; i < results.length; i++) {
-						$this.siblings(".form-validation").text(results[i].message).parent().addClass("has-error");
-					}
-				} else {
-					$this.siblings(".form-validation").text("").parent().removeClass("has-error")
-				}
-			}).regula('bind');
 
 			var regularConstraintsMessages = [
 				{
