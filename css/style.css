@@ -8050,6 +8050,20 @@ html[class*="ie"] .dtp-hour-hand {
     font-size: 14px;
   }
 }
+@media (max-width: 1200px) {
+  * + .box-icon-modern-title {
+    font-size: 15px;
+  }
+  .box-icon-modern .forhover{
+    font-size: 12px;
+  }
+  .box-icon-modern{
+    min-height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 992px) {
   .icon-modern-list .forhover {
     display: none;
@@ -8118,6 +8132,8 @@ html[class*="ie"] .dtp-hour-hand {
     border-radius: 15px;
     margin-bottom: 15px;
     position: relative;
+    min-height: unset;
+    display: block;
   }
   .box-icon-modern h4 {
     width: 100%;

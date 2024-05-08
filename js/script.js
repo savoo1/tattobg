@@ -1451,15 +1451,17 @@
 
 $(".content").slideUp(150);
 $(".box-icon-modern").click(function (e) {
-    e.preventDefault();
-	if($(this).hasClass("active-faq-mobile")){
-		$(this).removeClass("active-faq-mobile");
-		$(".content").slideUp(150);
-	}else{
-		$(".active-faq-mobile").removeClass("active-faq-mobile");
-		$(this).addClass("active-faq-mobile");
-		$(".content").slideUp(150);
-		$(this).find(".content").slideDown(150);
+	if ($(window).width() < 960) {
+		e.preventDefault();
+		if($(this).hasClass("active-faq-mobile")){
+			$(this).removeClass("active-faq-mobile");
+			$(".content").slideUp(150);
+		}else{
+			$(".active-faq-mobile").removeClass("active-faq-mobile");
+			$(this).addClass("active-faq-mobile");
+			$(".content").slideUp(150);
+			$(this).find(".content").slideDown(150);
+		}
 	}
 });
 
