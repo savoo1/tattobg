@@ -253,6 +253,7 @@ p [style*="max-width"] {
   display: block;
   width: 100%;
   height: 100%;
+  
   object-fit: cover;
 }
 
@@ -813,6 +814,7 @@ img {
 }
 .icon-circle-sm svg {
   max-width: 18px;
+  width: 100%;
   max-height: 24px;
   vertical-align: unset;
 }
@@ -3859,7 +3861,8 @@ html.tablet .ui-to-top {
 
 .swiper-pagination {
   position: absolute;
-  display: block;
+  display: flex;
+  gap: 10px;
   text-align: center;
   transition: 0.3s;
   transform: translate3d(0, 0, 0);
@@ -8265,6 +8268,7 @@ html[class*="ie"] .dtp-hour-hand {
 }
 .social-media a svg {
   max-width: 42px;
+  width: 100%;
   transition: transform 0.5s;
 }
 .social-media a svg path {
@@ -8317,4 +8321,25 @@ html[class*="ie"] .dtp-hour-hand {
   .rd-navbar-wrap-absolute svg path {
     fill: #000 !important;
   }
+  .brand .brand-logo-dark{
+    max-width: 110px;
+  }
+  .hero-slider-container{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  #intro{
+    margin-bottom: 20px;
+  }
+  .section-page-title{
+    padding: 50px 0px;
+    padding-top: 106px;
+  }
 }
+@media (max-width: 600px) {
+  .swiper-slide-caption * + .lead{
+    font-size: 14px;
+  }
+}
+
+/* hero-slider-container */
