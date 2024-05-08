@@ -11,7 +11,7 @@ $artist = $_POST['artist'];
 $subject = "Kontakt sa sajta";
 
 
-$subject2 = "Potvrda: Vaš zahtev je poslan tattoobeograd.rs"; // For customer confirmation
+$subject2 = "Potvrda: Vaš zahtev je poslat sa tattoobeograd.rs"; // For customer confirmation
 
 //Email body I will receive
 $message = "Klijent: " . "\n" . $name . "\n\n" .
@@ -24,7 +24,7 @@ $message = "Klijent: " . "\n" . $name . "\n\n" .
 
 //Message for client confirmation
 $message2 = "Postovani " . $name . "\n"
-. "Vas zahtev nam je stigao. Odgovorit cemo Vam u najkraćem mogućem roku" . "\n\n"
+. "Vaš zahtev nam je stigao. Odgovorićemo Vam u najkraćem mogućem roku" . "\n\n"
 . "Vaša poruka je: " . "\n" . "'" . $_POST['message'] . "'" . "\n\n";
 
 //Email headers
