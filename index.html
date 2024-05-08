@@ -676,19 +676,19 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-lg-6">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-name">Ime I Prezime</label>
-                      <input class="form-input contact-name" type="text" name="name" data-constraints="@Required" required/>
+                      <input class="form-input contact-name" id="contact-name" type="text" name="name" data-constraints="@Required" required/>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-email">Vaš E-mail</label>
-                      <input class="form-input contact-email" type="email" name="email" data-constraints="@Email @Required" required />
+                      <input class="form-input contact-email" id="contact-email" type="email" name="email" data-constraints="@Email @Required" required />
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-phone">Vaš Telefon</label>
-                      <input class="form-input contact-phone" type="text" name="phone" data-constraints="@Numeric @Required" required />
+                      <input class="form-input contact-phone" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required" required />
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -723,7 +723,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-lg-12">
                     <div class="form-wrap">
                       <label class="form-label" for="contact-message">Vaša poruka</label>
-                      <textarea class="form-input contact-message"  name="message" data-constraints="@Required" required></textarea>
+                      <textarea class="form-input contact-message" id="contact-message" name="message" data-constraints="@Required" required></textarea>
                     </div>
                   </div>
                 </div>
