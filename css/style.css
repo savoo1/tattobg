@@ -8054,10 +8054,10 @@ html[class*="ie"] .dtp-hour-hand {
   * + .box-icon-modern-title {
     font-size: 15px;
   }
-  .box-icon-modern .forhover{
+  .box-icon-modern .forhover {
     font-size: 12px;
   }
-  .box-icon-modern{
+  .box-icon-modern {
     min-height: 210px;
     display: flex;
     align-items: center;
