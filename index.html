@@ -54,6 +54,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!--[if lt IE 10]>
       <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3); clear: both; text-align: center; position: relative; z-index: 1">
         <a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
@@ -667,6 +669,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <div class="col-md-10 col-xl-8">
               <!-- RD Mailform-->
               <form class="rd-mailform text-left quote-form-inputs" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+
                 <div class="row row-20 justify-content-center">
                   <div class="col-lg-6">
                     <div class="form-wrap">
@@ -722,6 +725,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-12">
+                  <div class="g-recaptcha" data-sitekey="6Lft7dUpAAAAAJF7kmC0HTVuIjPaBHs8ixQb9EOT"></div>
+                </div>
+
                 <div class="form-button group-sm text-center">
                   <button class="button button-primary form-submit" type="submit">Zakaži termin</button>
                 </div>
