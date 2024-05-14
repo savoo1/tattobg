@@ -30,9 +30,9 @@ $(".form-submit").click(function (e) {
       name: $(".contact-name").val(),
       email: $(".contact-email").val(),
       phone: $(".contact-phone").val(),
-      service: $(".contact-service").find(":selected").text(),
-      date: $(".contact-date").val(),
-      artist: $(".contact-artist").find(":selected").text(),
+      tattooplace: $(".tattoo-place").find(":selected").text(),
+      tattoocolor: $(".tattoo-color").find(":selected").text(),
+      tattoosize: $(".contact-tattoo-size").val(),
       message: $(".contact-message").val(),
     };
     console.log(contact_form);
@@ -49,9 +49,9 @@ $(".form-submit").click(function (e) {
           }
         },
       });
-    location.reload();
-    }else{
-      $(".recap-div").addClass("recap-div_active")
+      location.reload();
+    } else {
+      $(".recap-div").addClass("recap-div_active");
     }
   } else {
     $(".quote-form-inputs input").each(function (index) {

@@ -8321,6 +8321,10 @@ html[class*="ie"] .dtp-hour-hand {
   width: 302px !important;
   height: 76px !important;
 }
+.form-label span {
+  font-size: 12px;
+}
+
 @media (max-width: 600px) {
   .social-cta h1 {
     font-size: 17px;

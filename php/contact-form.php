@@ -4,10 +4,10 @@ $mailto = "savo436@gmail.com";  //My email address
 //getting customer data
 $name = $_POST['name'];
 $fromEmail = $_POST['email'];
-$service = $_POST['service'];
+$tattooplace = $_POST['tattooplace'];
 $phone = $_POST['phone'];
-$date = $_POST['date'];
-$artist = $_POST['artist'];
+$tattoocolor = $_POST['tattoocolor'];
+$tattoosize = $_POST['tattoosize'];
 $subject = "Kontakt sa sajta";
 
 
@@ -15,11 +15,11 @@ $subject2 = "Potvrda: Vaš zahtev je poslat sa tattoobeograd.rs"; // For custome
 
 //Email body I will receive
 $message = "Klijent: " . "\n" . $name . "\n\n" .
-"Usluga: " . "\n" . $service . "\n\n" .
+"Deo Tela: " . "\n" . $tattooplace . "\n\n" .
 "Email: " . "\n" . $fromEmail . "\n\n" .
 "Telefon: " . "\n" . $phone . "\n\n" .
-"Datum: " . "\n" . $date . "\n\n" .
-"Umetnik: " . "\n" . $artist . "\n\n" .
+"Boja Tetovaze: " . "\n" . $tattoocolor . "\n\n" .
+"Velicina Tetovaze: " . "\n" . $tattoosize . "\n\n" .
 "Poruka klijenta: " . "\n" . $_POST['message'];
 
 //Message for client confirmation

@@ -691,30 +691,38 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                   <div class="col-lg-6">
                     <div class="form-wrap">
                       <!--Select 2-->
-                      <select class="form-input select-filter contact-service" data-placeholder="Izaberite uslugu" data-minimum-results-for-search="Infinity" data-minimum-results-search="-1" data-constraints="@Required" required>
+                      <select class="form-input select-filter tattoo-place" data-placeholder="Deo tela" data-minimum-results-for-search="Infinity" data-minimum-results-search="-1" data-constraints="@Required" required>
                         <option label="1"></option>
-                        <option value="2">Tetoviranje</option>
-                        <option value="3">Prekrivanje tetovaža</option>
-                        <option value="4">Tattoo design</option>
-                        <option value="5">Ostalo</option>
+                        <option value="2">Noga</option>
+                        <option value="3">List</option>
+                        <option value="4">Članak</option>
+                        <option value="5">Stopalo</option>
+                        <option value="6">Ruka</option>
+                        <option value="7">Podlaktica</option>
+                        <option value="8">Zglob</option>
+                        <option value="9">Šaka</option>
+                        <option value="10">Vrat</option>
+                        <option value="11">Glava</option>
+                        <option value="12">Leđa</option>
+                        <option value="13">Stražnjica</option>
+                        <option value="14">Drugo (molim navedite dio tela)</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-wrap">
-                      <label class="form-label" for="date">Datum (opcinalno)</label>
-                      <input class="form-input contact-date" id="date" type="text" name="date" data-time-picker="date" />
+                      <!--Select 2-->
+                      <select class="form-input select-filter tattoo-color" data-placeholder="Boja tetovaže" data-minimum-results-for-search="Infinity" data-minimum-results-search="-1" data-constraints="@Required" required>
+                        <option label="1"></option>
+                        <option value="2">Crno/Bela</option>
+                        <option value="3">U Boji</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-lg-6">
                     <div class="form-wrap">
-                      <select class="form-input select-filter contact-artist" data-placeholder="Izaberite umetnika" data-minimum-results-for-search="Infinity" data-minimum-results-search="-1" data-constraints="@Required" required>
-                        <option label="1"></option>
-                        <option value="2">Miroslav Maslar ciki</option>
-                        <option value="3">Aleksandra Maslar</option>
-                        <option value="4">Katarina Milinković</option>
-                        <option value="5">Ivan Marić</option>
-                      </select>
+                      <label class="form-label" for="contact-tattoo-size">Velicina tetovaže <span>(npr 20x30)</span></label>
+                      <input class="form-input contact-tattoo-size" id="contact-tattoo-size" type="text" name="tattoo-size" data-constraints="@Required" required />
                     </div>
                   </div>
                   <div class="col-lg-12">
