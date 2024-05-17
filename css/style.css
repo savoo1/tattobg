@@ -3669,7 +3669,16 @@ html.tablet .ui-to-top {
 
 @media (min-width: 1200px) {
   .rd-navbar-classic.rd-navbar-static .rd-nav-item + .rd-nav-item {
-    margin-left: 46px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1100px) {
+  .rd-navbar-classic.rd-navbar-static .rd-nav-item + .rd-nav-item {
+    margin-left: 20px;
+    font-size: 13px;
+  }
+  .rd-navbar-static .rd-nav-link {
+    font-size: 13px;
   }
 }
 
@@ -8368,3 +8377,21 @@ html[class*="ie"] .dtp-hour-hand {
 }
 
 /* hero-slider-container */
+
+.navbar-lang-image {
+  max-width: 16px;
+  max-height: 16px;
+  width: 100%;
+}
+.lang-dropdown {
+  max-width: 150px;
+}
+.lang-dropdown .rd-dropdown-item .rd-dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lang-dropdown .rd-dropdown-item .rd-dropdown-link img {
+  border: 0.1px solid #a7a7a7;
+  border-radius: 50%;
+}
