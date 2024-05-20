@@ -1,5 +1,5 @@
 <?php
-$mailto = "savo436@gmail.com";  //My email address
+$mailto = "theblackdahliatattoo@gmail.com";  //My email address
 
 //getting customer data
 $name = $_POST['name'];

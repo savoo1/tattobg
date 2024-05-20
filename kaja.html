@@ -1,32 +1,33 @@
 <!-- Page Title--><!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158173287-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158173287-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-158173287-1');
-    gtag('config', 'AW-667088522');
-  </script> -->
+      gtag("config", "UA-158173287-1");
+      gtag("config", "AW-667088522");
+    </script>
     <!-- Event snippet for Lead  - Kontakt conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <!-- <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-667088522/RMcKCN_KyMgBEIrti74C',
-        'event_callback': callback
-      });
-      return false;
-    }
-  </script> -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-667088522/RMcKCN_KyMgBEIrti74C",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
     <title>Tetoviranje Beograd | The Black Dahlia Tattoo Studio</title>
     <meta name="description" content="Najbolje mesto za tetoviranje u Beogradu. Okupljamo artiste koji pokrivaju sve tattoo stilove. Ako razmišljaš o tetovaži, pozovi nas odmah i zakaži svoj termin. Zakaži tetoviranje Beograd" />
 
@@ -155,15 +156,14 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
                         </a>
                       </li>
                       <li class="rd-nav-item rd-navbar--has-dropdown rd-navbar-submenu">
-                        <a class="rd-nav-link" href="kaja-en.html">
-                          <img class="navbar-lang-image" src="images/united-states.png" alt="US English"> English</a></span>
+                        <a class="rd-nav-link" href="kaja-en.html"> <img class="navbar-lang-image" src="images/united-states.png" alt="US English" /> English</a>
                         <!-- RD Navbar Dropdown-->
                         <ul class="rd-menu rd-navbar-dropdown lang-dropdown">
                           <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="kaja-en.html"> <img class="navbar-lang-image" src="images/united-states.png" alt="US English"> English</a>
+                            <a class="rd-dropdown-link" href="kaja-en.html"> <img class="navbar-lang-image" src="images/united-states.png" alt="US English" /> English</a>
                           </li>
                           <li class="rd-dropdown-item">
-                            <a class="rd-dropdown-link" href="kaja.html"> <img class="navbar-lang-image" src="images/serbia.png" alt="Srpski"> Srpski</a>
+                            <a class="rd-dropdown-link" href="kaja.html"> <img class="navbar-lang-image" src="images/serbia.png" alt="Srpski" /> Srpski</a>
                           </li>
                         </ul>
                       </li>

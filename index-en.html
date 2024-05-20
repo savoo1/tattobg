@@ -2,31 +2,33 @@
 <html class="wide wow-animation" lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158173287-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158173287-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-158173287-1');
-    gtag('config', 'AW-667088522');
-  </script> -->
+      gtag("config", "UA-158173287-1");
+      gtag("config", "AW-667088522");
+    </script>
     <!-- Event snippet for Lead  - Kontakt conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <!-- <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-667088522/RMcKCN_KyMgBEIrti74C',
-        'event_callback': callback
-      });
-      return false;
-    }
-  </script> -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-667088522/RMcKCN_KyMgBEIrti74C",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
     <title>Tattoo Belgrade | The Black Dahlia Tattoo Studio</title>
     <meta name="description" content="The best tattoo place in Belgrade. We bring together artists covering all tattoo styles. If you are thinking about a tattoo, call us now and schedule your appointment. Book a tattoo in Belgrade" />
 
