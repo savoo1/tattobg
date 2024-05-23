@@ -91,3 +91,78 @@ $(".quote-form-inputs select").on("change", function () {
     $(this).parent().find(".form-input").css("border", "1px solid #fff");
   }
 });
+
+
+$(".form-submit-kurs").click(function (e) {
+  e.preventDefault();
+
+
+  if ($(".kurs-form")[0].checkValidity()) {
+    var contact_form = {
+      name: $(".contact-name").val(),
+      email: $(".contact-email").val(),
+      phone: $(".contact-phone").val(),
+      datum: $(".tattoo-date").find(":selected").text(),
+      message: $(".contact-message").val(),
+    };
+    console.log(contact_form);
+
+    $.ajax({
+      type: "POST",
+      url: "../php/kurs.php",
+      data: contact_form,
+      dataType: "json",
+      success: function (data) {
+        if (data.status == "success") {
+          return true;
+        }
+      },
+    });
+    location.reload();
+  } else {
+    $(".kurs-form input").each(function (index) {
+      if (!$(this)[0].validity.valid) {
+        $(this).css("border", "1px solid red");
+      }
+    });
+    $(".kurs-form select").each(function (index) {
+      if (!$(this)[0].validity.valid) {
+        $(this).parent().find(".form-input").css("border", "1px solid red");
+      }
+    });
+    if (!$(".kurs-form textarea")[0].validity.valid) {
+      $(".kurs-form textarea").css("border", "1px solid red");
+    }
+  }
+
+});
+
+$(".kurs-form input").on("keyup", function () {
+  if ($(this)[0].validity.valid) {
+    $(this).css("border", "1px solid #fff");
+    if ($(this).hasClass("silver-border")) {
+      $(this).css("border", "1px solid #a1a1a1");
+    }
+  }
+});
+$(".kurs-form input").on("change", function () {
+  if ($(this)[0].validity.valid) {
+    $(this).css("border", "1px solid #fff");
+    if ($(this).hasClass("silver-border")) {
+      $(this).css("border", "1px solid #a1a1a1");
+    }
+  }
+});
+$(".kurs-form textarea").on("keyup", function () {
+  if ($(this)[0].validity.valid) {
+    $(this).css("border", "1px solid #fff");
+    if ($(this).hasClass("silver-border")) {
+      $(this).css("border", "1px solid #a1a1a1");
+    }
+  }
+});
+$(".kurs-form select").on("change", function () {
+  if ($(this)[0].validity.valid) {
+    $(this).parent().find(".form-input").css("border", "1px solid #fff");
+  }
+});
